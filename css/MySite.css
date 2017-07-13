@@ -1,0 +1,177 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+body {
+	font-size: 16px;
+	font-family: "楷体";
+	background-image: url(../image/green.png);background-position:center;
+	
+	
+}
+ul, dl, dt, dd, p {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+a {
+	text-decoration: none;
+}
+.head {
+	width: auto;
+	height: 60px;
+	margin-top: 5px;
+	text-align: center;
+	position: relative;
+}
+.weather {
+	margin: 0 auto;
+	width: 430px;
+	height: 60px;
+	display: inline-block;
+}
+.right {
+	width: 200px;
+	text-align: left;
+	height: 60px;
+	display: inline-block;
+	position: absolute;
+	right: 3px;
+	top: 2px;
+}/*time set*/
+input[type=text], input[type=password] {
+	font-size: 13px;
+	min-height: 32px;
+	margin: 0;
+	padding: 7px 8px;
+	outline: none;
+	color: #333;
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-position: right center;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	box-shadow: inset 0 1px 2px rgba(0,0,0,0.075);/*搜索框样式*/
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	transition: all 0.15s ease-in;
+	-webkit-transition: all 0.15s ease-in 0;
+	vertical-align: middle;
+}
+#search input[type=text] {
+	font-size: 20px;/*输入框高*/
+	width: 455px;
+}
+#search .button {
+	margin-left: 4px;
+	padding: 8px; /*相当于按钮的高*/
+	width: 90px;
+	font-size: 15px;
+	font-family: "微软雅黑";
+}
+.search {
+	margin: 0 auto;/*居中*/
+	width: 550px;
+	height: 40px;
+	margin-top: 45px;
+}
+.search.button:hover, .button:active { /*鼠标放在按钮之后的动作*/
+	background-position: 0 -15px;
+	border-color: #ccc #ccc #b5b5b5;
+}
+.famoussite {
+	width: 100%;
+	height: 235px;
+	margin-top: 40px;
+}
+.famoussite ul {
+	width: 960px;
+	height: 220px;
+	margin: 0 auto;
+}
+.famoussite ul li {
+	width: 127px;
+	height: 35px;
+	float: left;
+	margin: 3px 5px 7px 5px;
+	text-align: center;
+	list-style: none;
+}
+.famoussite ul li a {
+	text-decoration: none;
+	color: #333333;
+	font-size: 18px;
+	text-overflow: clip;
+	display: inline-block;
+	margin-top: 8px;
+	font-family: "微软雅黑";
+}
+.famoussite ul li a:hover {
+	background: #151515;
+	color: #FFF;
+}
+.commonsite {
+	width: 960px;
+	height: auto;
+	margin: 0 auto;
+}
+.commonsite dl {
+	width: auto;
+	height: 30px;
+	margin: 10px 0;
+}
+.commonsite dl dt {
+	float: left;
+	width: 50px;
+	height: 30px;
+}
+.commonsite dl dt a {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	background: #E8E6E3;
+	color: #333333;
+	text-align: center;
+	line-height: 30px;
+	font-family: "微软雅黑";
+}
+.commonsite dl dt a:hover {
+	background: #333333;
+	color: #FFF;
+}
+.commonsite dl dd {
+	float: left;
+	width: 130px;
+	height: 25px;
+	text-align: center;
+	padding-top: 5px;
+}
+.commonsite dl dd a {
+	color: #333333;
+	display: inline-block;
+	font-family: "微软雅黑 Light";
+}
+.commonsite dl dd a:hover {
+	background: #151515;
+	color: #FFF;
+}
+.LoR {
+	height:205px;
+	width:164px;
+	overflow:hidden;
+	background:url(images/logo.png) 0 0 no-repeat;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin:-102px auto auto -82px;
+	z-index:2;
+}
