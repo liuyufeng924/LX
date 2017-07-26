@@ -45,6 +45,7 @@ a {
 	height: 60px;
 	display: inline-block;
 	position: absolute;
+	line-height:12px;
 	right: 3px;
 	top: 2px;
 }/*time set*/
