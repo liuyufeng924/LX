@@ -145,7 +145,7 @@ function show_cur_times(){
 //////////////////////////////////////////////////////////////////////////////
 function showDate() {
 	var sValue = getFullYear(dNow) + "年" + (dNow.getMonth() + 1) + "月" + dNow.getDate() + "日" + " " + sWeek[dNow.getDay()] + " ";
-	sValue += GetLunarDay(yy, mm, dd);
+	sValue += GetLunarDay(yy, mm, dd)+"<br><br>";
 	sValue += show_cur_times();
 	document.getElementById("pDate").innerHTML = sValue;
 }
