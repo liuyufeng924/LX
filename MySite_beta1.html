@@ -1,0 +1,260 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>MySite</title>
+<base target="_blank">
+<!--点击打开新的页面-->
+<style type="text/css">
+</style>
+    <link rel="stylesheet" href="css/MySite.css">
+    <style>
+</style>
+    <script src='js/jquery.min.js'></script>
+    <script type="text/javascript" src="js/three.min.js"></script>
+    <script type="text/javascript" src="js/get_weather.js"></script>
+</head>
+
+<body>
+
+<div id="head" class="head">
+  <!--<div id="time" class="right" >-->
+
+  <div id="weather" class="weather">
+      <p id="city">
+      <div class = weather_table>
+      <table id="t1">
+          <tr>
+              <td rowspan="2"><img src="image/ico/100.png" id="today"/></td>
+              <td>今天&nbsp</td>
+              <td  rowspan="2"><img src="image/ico/101.png" id= "tomorrow"/></td>
+              <td>明天&nbsp</td>
+              <td  rowspan="2"><img src="image/ico/102.png" id = "after_tomorrow"/></td>
+              <td>后天&nbsp</td>
+          </tr>
+          <tr>
+              <td id="td1"></td>
+              <td id="td2"></td>
+              <td id="td3"></td>
+          </tr>
+      </table>
+      </div>
+
+      </p>
+  </div>
+  <div id="pDate" class="right">
+    <script type="text/javascript" src="js/lunar_calendar.js"></script> <!--显示时间日期-->
+  </div>
+</div>
+
+<div id="search" class="search"><!--搜索框-->
+  <form id="baiduSearch" target="_blank" name="baiduSearch" method="get" action="http://www.baidu.com/s">
+    <table>
+      <tr>
+        <input type="text" id="search1" name="word" class="text fl" placeholder="百度一下" baiduSug="1" style="color:#000000"/>
+        <input type="submit" value="百度搜索" class="button fl"/>
+      </tr>
+    </table>
+  </form>
+  <script charset="gbk" src="http://www.baidu.com/js/opensug.js"></script> <!--百度搜索框提示-->
+</div>
+<div id="famoussite" class="famoussite" style="width:100%">
+  <ul>
+    <li><a href="http://www.baidu.com/">百度</a></li>
+    <li><a href="http://www.sina.com.cn/">新浪</a></li>
+    <li><a href="http://www.qq.com/">腾讯</a></li>
+    <li><a href="http://www.taobao.com/">淘宝网</a></li>
+    <li><a href="https://mail.aliyun.com">阿里邮箱</a></li>
+    <li><a href="http://www.mydrivers.com/">驱动之家</a></li>
+    <li><a href="http://hn.189.cn">中国电信</a></li>
+    <li><a href="http://cn.bing.com/">Bing</a></li>
+    <li><a href="http://weibo.com">新浪微博</a></li>
+    <li><a href="http://www.163.com/">网易</a></li>
+    <li><a href="http://www.jd.com/">京东</a></li>
+    <li><a href="http://www.51job.com/">前程无忧</a></li>
+    <li><a href="http://www.zol.com.cn/">中关村在线</a></li>
+    <li><a href="http://www.10010.com/">中国联通</a></li>
+    <li><a href="http://www.google.com.hk">Google</a></li>
+    <li><a href="http://www.tianya.cn/">天涯</a></li>
+    <li><a href="http://www.bbc.com/zhongwen/simp">BBC</a></li>
+    <li><a href="http://www.suning.com/">苏宁易购</a></li>
+    <li><a href="http://www.zhaopin.com/">智联招聘</a></li>
+    <li><a href="http://www.pconline.com.cn/">太平洋电脑</a></li>
+    <li><a href="http://10086.cn/">中国移动</a></li>
+    <li><a href="http://ditu.amap.com/">高德地图</a></li>
+    <li><a href="http://www.youku.com/">优酷网</a></li>
+    <li><a href="http://www.voachinese.com/">VoaChinese</a></li>
+    <li><a href="http://www.yhd.com/">一号店</a></li>
+    <li><a href="http://www.58.com/">58同城</a></li>
+    <li><a href="http://bbs.zhiyoo.com/">安智</a></li>
+    <li><a href="http://www.mi.com">小米手机</a></li>
+    <li><a href="https://zh.wikipedia.org/wiki/Wikipedia:%E9%A6%96%E9%A1%B5">Wikipedia</a></li>
+    <li><a href="http://www.bilibili.com/">bilibili</a></li>
+    <li><a href="http://www.thepaper.cn/">澎湃新闻</a></li>
+    <li><a href="http://chs.meituan.com/">美团</a></li>
+    <li><a href="http://cs.ganji.com/">赶集</a></li>
+    <li><a href="http://www.itellyou.cn/">MSDN</a></li>
+    <li><a href="http://www.shaoit.com">殁漂遥</a></li>
+  </ul>
+</div>
+
+<div class="commonsite">
+
+    <dl>
+        <dt><a>视频</a></dt>
+        <dd><a href="http://www.piaohua.com/">飘花电影</a></dd>
+        <dd><a href="http://bbs.hd62.com/forum-30-1.html">飞鸟娱乐</a></dd>
+        <dd><a href="http://www.youku.com/">优酷网</a></dd>
+        <dd><a href="https://www.douyu.com/">斗鱼</a></dd>
+        <dd><a href="http://www.iqiyi.com/">爱奇艺</a></dd>
+        <dd><a href="http://v.qq.com/">腾讯视频</a></dd>
+        <dd><a href="http://tv.sohu.com/">搜狐视频</a></dd>
+    </dl>
+
+    <dl>
+        <dt><a>银行</a></dt>
+        <dd><a href="http://www.ccb.com">建设银行</a></dd>
+        <dd><a href="http://www.abchina.com">农业银行</a></dd>
+        <dd><a href="http://www.icbc.com.cn">工商银行</a></dd>
+        <dd><a href="http://www.psbc.com">邮政储蓄银行</a></dd>
+        <dd><a href="http://www.boc.cn/">中国银行</a></dd>
+        <dd><a href="http://www.bankcomm.com/">交通银行</a></dd>
+        <dd><a href="http://www.cscb.cn/">长沙银行</a></dd>
+    </dl>
+
+    <dl>
+        <dt><a>购物</a></dt>
+        <dd><a href="http://www.jd.com">京东商城</a></dd>
+        <dd><a href="http://www.vip.com">唯品会</a></dd>
+        <dd><a href="http://www.dangdang.com">当当网</a></dd>
+        <dd><a href="http://www.yhd.com">1号店</a></dd>
+        <dd><a href="http://www.suning.com">苏宁易购</a></dd>
+        <dd><a href="http://www.gome.com.cn">国美在线</a></dd>
+        <dd><a href="http://www.yixun.com">易迅网</a></dd>
+    </dl>
+
+    <dl>
+        <dt><a>学习</a></dt>
+        <dd><a href="http://www.runoob.com/">菜鸟教程</a></dd>
+        <dd><a href="http://www.csdn.net/">CSDN</a></dd>
+        <dd><a href="http://www.w3school.com.cn/">W3school</a></dd>
+        <dd><a href="http://fanyi.baidu.com/?aldtype=16047#auto/zh">百度翻译</a></dd>
+        <dd><a href="http://translate.google.cn/">谷歌翻译</a></dd>
+        <dd><a href="http://translate.google.com">谷歌翻译HK</a></dd>
+        <dd><a href="https://zh.wikipedia.org/wiki/Wikipedia:%E9%A6%96%E9%A1%B5">维基百科</a></dd>
+    </dl>
+
+    <dl>
+        <dt><a>小说</a></dt>
+        <dd><a href="http://www.qidian.com/">起点中文网</a></dd>
+        <dd><a href="http://www.17k.com/">17k小说</a></dd>
+        <dd><a href="http://www.hongxiu.com/">红袖添香</a></dd>
+        <dd><a href="http://www.zongheng.com/">纵横中文</a></dd>
+        <dd><a href="http://www.xs8.cn/">言情小说吧</a></dd>
+        <dd><a href="http://www.xxsy.net/">潇湘书院</a></dd>
+        <dd><a href="http://www.readnovel.com/">小说阅读网</a></dd>
+    </dl>
+
+    <dl>
+        <dt><a>音乐</a></dt>
+        <dd><a href="http://www.1ting.com/">一听音乐</a></dd>
+        <dd><a href="http://www.kugou.com/">酷狗音乐</a></dd>
+        <dd><a href="http://music.baidu.com/">百度音乐</a></dd>
+        <dd><a href="http://www.9ku.com/">九酷音乐</a></dd>
+        <dd><a href="http://y.qq.com/">QQ音乐</a></dd>
+        <dd><a href="http://www.xiami.com/">虾米音乐</a></dd>
+        <dd><a href="http://douban.fm/">豆瓣FM</a></dd>
+    </dl>
+
+    <dl>
+        <dt><a>体育</a></dt>
+        <dd><a href="http://sports.sohu.com/">搜狐体育</a></dd>
+        <dd><a href="http://sports.sina.com.cn/">新浪体育</a></dd>
+        <dd><a href="http://sports.cntv.cn/">CCTV体育</a></dd>
+        <dd><a href="http://sports.qq.com/">腾讯体育</a></dd>
+        <dd><a href="http://www.hupu.com/">虎扑体育</a></dd>
+        <dd><a href="http://www.zhibo8.cc/">直播吧</a></dd>
+        <dd><a href="http://sports.sina.com.cn/nba/">NBA直播</a></dd>
+    </dl>
+
+    <dl>
+        <dt><a>财经</a></dt>
+        <dd><a href="http://www.eastmoney.com/">东方财富</a></dd>
+        <dd><a href="http://business.sohu.com/">搜狐财经</a></dd>
+        <dd><a href="http://www.hexun.com/">和讯财经</a></dd>
+        <dd><a href="http://finance.sina.com.cn/">新浪财经</a></dd>
+        <dd><a href="http://finance.qq.com/">腾讯财经</a></dd>
+        <dd><a href="http://www.jrj.com/">金融界</a></dd>
+        <dd><a href="http://money.163.com/">网易财经</a></dd>
+    </dl>
+
+    <dl>
+        <dt><a>旅游</a></dt>
+        <dd><a href="http://www.ctrip.com">携程旅行网</a></dd>
+        <dd><a href="http://www.elong.com">艺龙酒店</a></dd>
+        <dd><a href="http://www.lvmama.com">驴妈妈</a></dd>
+        <dd><a href="http://www.mangocity.com">芒果网</a></dd>
+        <dd><a href="http://www.qunar.com">去哪儿</a></dd>
+        <dd><a href="http://www.tujia.com">途家网</a></dd>
+        <dd><a href="http://www.jinjianginns.com">锦江之星</a></dd>
+    </dl>
+
+    <dl>
+        <dt><a>汽车</a></dt>
+        <dd><a href="http://www.autohome.com.cn/">汽车之家</a></dd>
+        <dd><a href="http://www.bitauto.com/">易车网</a></dd>
+        <dd><a href="http://www.xcar.com.cn/">爱卡汽车</a></dd>
+        <dd><a href="http://www.cheshi.com/">网上车市</a></dd>
+        <dd><a href="http://www.pcauto.com.cn/">太平洋汽车</a></dd>
+        <dd><a href="http://auto.sina.com.cn/">新浪汽车</a></dd>
+        <dd><a href="http://www.xgo.com.cn/">汽车点评网</a></dd>
+    </dl>
+
+    <dl>
+        <dt><a>交友</a></dt>
+        <dd><a href="https://www.zhihu.com/">知乎</a></dd>
+        <dd><a href="http://www.jiayuan.com/">世纪佳缘</a></dd>
+        <dd><a href="http://www.zhenai.com/">珍爱网</a></dd>
+        <dd><a href="http://www.baihe.com/">百合网</a></dd>
+        <dd><a href="http://www.youyuan.com/">有缘网</a></dd>
+        <dd><a href="http://www.zhiji.com/">知己交友网</a></dd>
+        <dd><a href="http://jiaoyou.58.com/">58交友</a></dd>
+
+    </dl>
+
+    <dl>
+        <dt><a>手机</a></dt>
+        <dd><a href="http://mobile.zol.com.cn/">中关村手机</a></dd>
+        <dd><a href="http://mobile.pconline.com.cn/">太平洋手机</a></dd>
+        <dd><a href="http://www.91.com/">91手机</a></dd>
+        <dd><a href="http://www.feng.com/">威锋网</a></dd>
+        <dd><a href="http://bbs.zhiyoo.com/">安智网</a></dd>
+        <dd><a href="http://www.mi.com">小米网</a></dd>
+        <dd><a href="http://www.vmall.com">华为商城</a></dd>
+    </dl>
+
+
+</div>
+
+<div id="footer" style="font-size:12px;height: auto; background-color:#FFFFFF;clear:both;text-align:center;"> Liuyufeng & CSU Copyright All Rights Reserved.京ICP证000000号 京公网安备13854385401号  </div>
+<script type="text/javascript" src="js/bubble.js"></script>
+
+</body>
+<!--<script>-->
+    <!--var timer = null;-->
+    <!--window.onload=function () {-->
+        <!--timer=setInterval(refr,120000);-->
+        <!--function refr() {-->
+
+            <!--var frame1 = document.getElementById("weather1");-->
+
+            <!--var str="http://i.tianqi.com/index.php?c=code&id=12&icon=1&num=5";-->
+            <!--/*str = str+"&lyf="+Math.round(Math.random()*10);*/-->
+            <!--frame1.setAttribute("src",str);-->
+
+
+        <!--}-->
+    <!--}-->
+<!--</script>-->
+
+</html>
