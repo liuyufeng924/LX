@@ -1,7 +1,6 @@
 /**
  * Created by liuyu on 2017-11-19.
  */
-$(document).ready(function(){
     var url = 'http://chaxun.1616.net/s.php?type=ip&output=json&callback=?&_='+ Math.random();
     $.getJSON(url, function(data) {
         ip = data.Ip;//获取用户IP
@@ -35,4 +34,4 @@ $(document).ready(function(){
             document.getElementById("td3").innerHTML = tmp_min_after_tomo+"～"+tmp_max_after_tomo+"℃";
         })
     });
-});
+
