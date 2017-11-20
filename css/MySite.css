@@ -38,6 +38,21 @@ a {
 	width: 430px;
 	height: 60px;
 	display: inline-block;
+	position:absolute;
+	top:13px;z-index:-3;
+	left:34%
+}
+
+#city{
+	float:left;
+	margin-top: 5%;
+}
+.weather_table img{
+	 height: 50px;;
+	 width: 50px;;
+ }
+.city.text{
+	float:left;
 }
 .right {
 	width: 200px;
